@@ -66,11 +66,11 @@ static const struct arg args[] = {
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
         { wifi_perc, "|%3s%%| ", "wlan0" },
-        { netspeed_rx, " %sB/s | ", "wlan0" },
-        { netspeed_tx, " %s B/s  ", "wlan0" },
-	{ cpu_perc, " %s | ", NULL	      },
-	{ ram_perc, " %s  ", NULL	      }, 	
-	{ run_command, "| %s%%| ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
+        { netspeed_rx, " %sB/s| ", "wlan0" },
+        { netspeed_tx, " %sB/s| ", "wlan0" },
+	{ battery_perc, "%3s%% ", "BAT0" },
+	{ battery_state, "%s] ", "BAT0" },  	
+	{ run_command, " %s%%| ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
 	{ datetime, "%s",           "%a %b %d %H:%M" },   
 
 };
