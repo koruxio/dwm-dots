@@ -1,0 +1,26 @@
+font:
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  size: 13.0
+
+background_opacity: 0.8
+
+offset:
+    x: 0.0
+    y: 0.0
+
+glyph_offset:
+  x: 0.0
+  y: 0.0
+
+use_thin_strokes: true

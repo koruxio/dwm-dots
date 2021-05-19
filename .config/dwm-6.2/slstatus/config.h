@@ -71,6 +71,6 @@ static const struct arg args[] = {
 	{ battery_perc, "%3s%% ", "BAT0" },
 	{ battery_state, "%s] ", "BAT0" },  	
 	{ run_command, " %s%%| ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
-	{ datetime, "%s",           "%a %b %d %H:%M" },   
+	{ datetime, "%s",           " %a %b %d  %H:%M" },   
 
 };
