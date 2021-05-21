@@ -56,6 +56,8 @@ setxkbmap en &
 
 picom -f &
 
+~/.fehbg &
+
 slstatus &
 
 exec dwm
