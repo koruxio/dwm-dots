@@ -54,16 +54,8 @@ setxkbmap en &
 # xrandr --output Virtual-1 --mode 1920x1080 &
 # xrandr --output Virtual-1 --mode 3840x2160 &
 
-sxhkd &
-
 picom -f &
 
 slstatus &
-
-nitrogen --restore &
-
-while true; do
-      dwm >/dev/null 2>&1
-done
 
 exec dwm
