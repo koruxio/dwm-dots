@@ -68,7 +68,7 @@ static const struct arg args[] = {
         { netspeed_rx, "| %sB/s| ", "wlp4s0" },
         { netspeed_tx, " %sB/s| ", "wlp4s0" },
         { wifi_perc, "%3s%%|", "wlp4s0" },
-	{ battery_perc, "%3s%% ", "BAT0" },
+	{ battery_perc, "%3s%% ", "BAT0" },
 	{ battery_state, "[%s] ", "BAT0" },  	
 	{ run_command, " %s%%| ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
 	{ datetime, "%s",           " %a %b %d  %H:%M" },   

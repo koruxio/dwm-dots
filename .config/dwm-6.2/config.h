@@ -8,10 +8,10 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono:size=8", "SymbolsNerdFont:size=8"};
 static const char dmenufont[]       = "JetBrainsMono-Bold:size=8";
-static const char col_gray1[]       = "#282a36";   //background color
+static const char col_gray1[]       = "#000000";   //background color
 static const char col_gray2[]       = "#008080";   //inactive window border color
-static const char col_gray3[]       = "#ffffff";   //font color
-static const char col_gray4[]       = "#A3BE8C";   //current tag and current window font color
+static const char col_gray3[]       = "#7d7583";   //font color
+static const char col_gray4[]       = "#ffffff";   //current tag and current window font color
 static const char col_cyan[]        = "#4C566A";   //Top bar second color (blue) and active window border color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
