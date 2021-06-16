@@ -12,7 +12,7 @@ static const char col_gray1[]       = "#000000";   //background color
 static const char col_gray2[]       = "#008080";   //inactive window border color
 static const char col_gray3[]       = "#7d7583";   //font color
 static const char col_gray4[]       = "#ffffff";   //current tag and current window font color
-static const char col_cyan[]        = "#4C566A";   //Top bar second color (blue) and active window border color
+static const char col_cyan[]        = "#f33446";   //Top bar second color (blue) and active window border color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -58,8 +58,9 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "alacritty", NULL };
-static const char *chromiumcmd[]    = { "firefox", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
+static const char *firefoxcmd[] = { "firefox", NULL};
+static const char *chromiumcmd[]    = { "chromium", NULL };
 static const char *telegramcmd[]   = { "telegram-desktop", NULL };
 static const char *vollower[]      = { "pulsemixer", "--change-volume", "-5",  NULL };
 static const char *volraise[]	   = { "pulsemixer", "--change-volume", "+5",  NULL  };
@@ -70,6 +71,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = termcmd } },
+	{ MODKEY,			XK_f,	   spawn,	   {.v = firefoxcmd } },
         { MODKEY,                       XK_c,      spawn,          {.v = chromiumcmd } },
         { MODKEY,                       XK_t,      spawn,          {.v = telegramcmd } },
         { MODKEY,                       XK_n,      spawn,          {.v = fileman } }, 

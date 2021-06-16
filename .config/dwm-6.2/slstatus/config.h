@@ -65,14 +65,14 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%F %T" },
 	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-        { netspeed_rx, "| %sB/s| ", "wlp4s0" },
-        { netspeed_tx, " %sB/s| ", "wlp4s0" },
-        { wifi_perc, "%3s%%|", "wlp4s0" },
-	{ cpu_perc, " %s |", NULL	      },
-	{ ram_perc, " %s|", NULL	      }, 	
+        { netspeed_rx, "[ %sB/s] ", "wlp4s0" },
+        { netspeed_tx, " %sB/s] ", "wlp4s0" },
+        { wifi_perc, "%3s%%]", "wlp4s0" },
+	{ cpu_perc, " %s ]", NULL	      },
+	{ ram_perc, " %s]", NULL	      }, 	
 	{ battery_perc, "%3s%% ", "BAT0" },
 	{ battery_state, "[%s] ", "BAT0" },  	
-	{ run_command, " %s%%| ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
+	{ run_command, " %s%%] ", "pulsemixer --get-volume | awk '{printf$1}'" }, 
 	{ datetime, "%s",           " %a %b %d  %H:%M" },   
 
 };
