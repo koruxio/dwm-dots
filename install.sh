@@ -1,4 +1,4 @@
-sudo pacman -S arc-gtk-theme transmission-gtk mpv firefox xf86-input-libinput gvfs-mtp nemo gvfs file-roller neofetch feh ntfs-3g papirus-icon-theme picom pulseaudio pulsemixer dmenu scrot kitty ttf-nerd-fonts-symbols ttf-jetbrains-mono wget xed xorg-server xorg-xinit xorg-xrandr xorg-xsetroot --needed --noconfirm
+sudo pacman -S arc-gtk-theme transmission-gtk mpv firefox xf86-input-libinput gvfs-mtp nemo gvfs file-roller neofetch dunst feh ntfs-3g papirus-icon-theme picom pulseaudio pulsemixer dmenu scrot kitty ttf-nerd-fonts-symbols ttf-jetbrains-mono wget xed xorg-server xorg-xinit xorg-xrandr xorg-xsetroot --needed --noconfirm
 
 sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions telegram-desktop nodejs npm --needed --noconfirm
 
