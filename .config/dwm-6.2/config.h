@@ -10,7 +10,7 @@ static const char *fonts[]          = { "JetBrainsMono:size=8", "SymbolsNerdFont
 static const char dmenufont[]       = "JetBrainsMono-Bold:size=8";
 static const char col_gray1[]       = "#000000";   //background color
 static const char col_gray2[]       = "#008080";   //inactive window border color
-static const char col_gray3[]       = "#7d7583";   //font color
+static const char col_gray3[]       = "#e9e9e9";   //font color
 static const char col_gray4[]       = "#ffffff";   //current tag and current window font color
 static const char col_cyan[]        = "#f33446";   //Top bar second color (blue) and active window border color
 static const char *colors[][3]      = {
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 
 static const Rule rules[] = {
 	/* xprop(1):
