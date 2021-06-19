@@ -1,0 +1,2 @@
+super + F9
+	sh .config/rofi/powermenu.sh

@@ -58,6 +58,9 @@ picom -f &
 
 ~/.fehbg &
 
+sxhkd &
+
 slstatus &
+# dwmblocks &
 
 exec dwm
