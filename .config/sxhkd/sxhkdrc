@@ -1,2 +1,5 @@
 super + F9
 	sh .config/rofi/powermenu.sh
+
+super + r
+	kitty -e ranger
