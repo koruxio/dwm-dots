@@ -7,13 +7,13 @@
 
 /* global settings and color variables */
 * {
-    maincolor:        #ebdbb2;
+    maincolor:        #3A654D;
     highlight:        bold #50fa7b;
     urgentcolor:      #ff79c6;
 
-    fg:               #ebdbb2;
-    bg:               #282828;
-    blackselect:      #928374;
+    fg:               #f8f8f2;
+    bg:               #0D0E0D;
+    blackselect:      #3A654D;
     cyan:             #8be9fd;
     font: "JetBrains Mono Bold 10";
     background-color: @bg;

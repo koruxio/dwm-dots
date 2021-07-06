@@ -4,9 +4,9 @@
  * Copyright: Dave Davenport
  */
 * {
-    background-color:      #282828;
+    background-color:     #000000;
     border-color:          White;
-    text-color:           #ebdbb2; 
+    text-color:            White; 
     font:            "JetBrains Mono Bold 10";
 }
 
@@ -38,5 +38,5 @@
     padding: 0px 2px;
 }
 #element selected {
-    background-color:  #504945;
+    background-color:  #3A654D;
 }

@@ -21,7 +21,7 @@ case $chosen in
         reboot
 	;;
     $lock)
-        i3lock -c 282828
+        i3lock -c 0D0E0D 
 	;;
     $logout)
         pkill -KILL -u $USER
