@@ -61,6 +61,7 @@ picom -f &
 sxhkd &
 
 slstatus &
-# dwmblocks &
 
 exec dwm
+
+

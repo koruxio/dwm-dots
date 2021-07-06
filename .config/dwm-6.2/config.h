@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 7;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -9,10 +9,10 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono:size=8", "SymbolsNerdFont:size=8"};
 static const char dmenufont[]       = "JetBrainsMono-Bold:size=8";
 static const char col_gray1[]       = "#000000";   //background color
-static const char col_gray2[]       = "#008080";   //inactive window border color
-static const char col_gray3[]       = "#e9e9e9";   //font color
+static const char col_gray2[]       = "#0D0E0D";   //inactive window border color
+static const char col_gray3[]       = "#ffffff";   //font color
 static const char col_gray4[]       = "#ffffff";   //current tag and current window font color
-static const char col_cyan[]        = "#f33446";   //Top bar second color (blue) and active window border color
+static const char col_cyan[]        = "#3A654D";   //Top bar second color (blue) and active window border color
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
