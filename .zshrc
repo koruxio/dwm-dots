@@ -11,10 +11,10 @@ PROMPT=$'\n''%B%F{153}%~   | %b%f'
 RPROMPT="[%h]"
 
 alias x='startx'
-alias f='xrandr --output DP-2 --brightness 0.8'
-alias m='xrandr --output DP-2 --brightness 0.5'
-alias n='xrandr --output DP-2 --brightness 0.3'
-alias d='xrandr --output DP-2 --brightness 0.2'
+alias f='xrandr --output eDP-1 --brightness 0.8'
+alias m='xrandr --output eDP-1 --brightness 0.5'
+alias n='xrandr --output eDP-1 --brightness 0.3'
+alias d='xrandr --output eDP-1 --brightness 0.2'
 alias c='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 
 
@@ -25,6 +25,42 @@ push() {
    git add -A
    git commit -m "$msg"
    git push
+}
+
+lock() {
+	i3lock -c 0D0E0D
+}
+
+logoff() {
+	pkill -KILL -u $USER
+}
+
+##Qts
+#======
+
+quotespool() {
+WEBSRC='https://www.passiton.com/inspirational-quotes'
+page=`shuf -i 1-50 -n 1`
+quote=`curl -s $WEBSRC?page=$page | grep "<img alt=" | tr -s ">" | cut -f2 -d ">" | cut -f1 -d "#" | cut -f2 -d '"' | grep -v "&" | shuf -n 1`
+echo "Hey $USER :)
+"
+echo "$quote"
+}
+
+
+
+###Lofi play
+#============
+
+lofi() {
+echo -e "\e[2;96m"
+quotespool
+echo -e "\n"
+echo " Playing lofi... relax and chill... :)
+"
+mpv --really-quiet --no-video https://www.youtube.com/watch?v=5qap5aO4i9A &
+sleep 5
+bash .shellrain
 }
 
 export PATH="$PATH:~/.local/bin"
