@@ -47,6 +47,30 @@ echo "Hey $USER :)
 echo "$quote"
 }
 
+pyenv() {
+	echo "Enter environment name : \n"
+	read envname
+
+	echo "Enter python version\neg: 3.9"
+	read pyversion
+
+	mkdir $HOME/$envname
+	cd $HOME/$envname
+
+
+	conda create -n $envname python=$pyversion
+	echo "Succesfully created environment $envname\n"
+	echo "Installing default packages ->"
+	
+	pip install pandas matplotlib jupyter numpy scikit-learn scipy
+
+	echo "Succesfully installed neccessary packages\n"
+
+	cd $HOME/$envname
+	
+	jupyter-notebook
+}
+
 
 
 ###Lofi play
